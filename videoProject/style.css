@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    
+    justify-content: center;
+    
+    color:rgb(19, 2, 19);
+    background-color: aliceblue;
+    text-shadow: 2px 2px grey;
+    line-height: 6vh;
+    
+}
+.video-container{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.btn{
+    position: absolute;
+    bottom: 7%;
+    left:7%;
+
+    
+}
+.play-btn{
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 4px 4px ;
+    
+}
+.play-btn:hover{
+    background-color: blue;
+    color:beige;
+}
+.pause-btn{
+    padding: 0.5rem;
+    border-radius:5px;
+    font-size: 20px;
+    box-shadow: 4px 4px;
+}
+.pause-btn:hover{
+    background-color: blue;
+    color:beige;
+}
