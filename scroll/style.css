@@ -1,0 +1,107 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* border:1px solid black; */
+}
+
+header {
+    flex: 1;
+}
+
+#nav {
+    position: fixed;
+    display: flex;
+    
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    z-index: 1000; 
+
+    
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    
+
+}
+a{
+    text-decoration: none;
+    font-size: 21px;
+}
+
+
+#home, #about, #services, #order {
+    height: 100vh;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px;
+}
+
+@media screen and (max-width: 699px) {
+    .links {
+        display: none;
+    }
+    .links.active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+#home {
+    background-color:lavenderblush;
+   
+    text-shadow: 13px 13px 13px ;
+}
+
+#about {
+    background-color:blanchedalmond;
+    text-shadow: 13px 13px 13px ;
+}
+#services{
+    background-color: cadetblue;
+    
+    text-shadow: 13px 13px 13px ;
+}
+#order{
+    background-color: grey;
+    text-shadow: 13px 13px 13px ;
+}
+.btn{
+    padding-left: 5px;
+    padding-right: 5px;
+    border:none;
+    background-color: white;
+}
+.btn:hover{
+    background-color: rgb(86, 86, 245);
+    color: white;
+    
+}

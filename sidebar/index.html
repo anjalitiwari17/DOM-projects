@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script
+    src="https://kit.fontawesome.com/1ce671e465.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="sidebar-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <h1>Coding<span>Addict</span></h1>
+                </div>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#about.html">About</a></li>
+                <li><a href="#projects.html">Projects</a></li>
+                <li><a href="#contacts.html">Contacts</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.behance.net"></a><i class="fab fa-behance"></i></li>
+                <li><a href="https://www.twitter.com"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.sketch.com"><i class="fab fa-sketch"></i></a></li>
+            </ul>
+        </aside>
+        <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.querySelector(".sidebar-toggle");
+        const closeBtn = document.querySelector(".close-btn");
+        const sidebar = document.querySelector(".sidebar");
+    
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.add("show-sidebar");
+            toggleBtn.style.display = "none";
+            closeBtn.style.display = "block";
+        });
+    
+        closeBtn.addEventListener('click', function() {
+            sidebar.classList.remove("show-sidebar");
+            closeBtn.style.display = "none";
+            toggleBtn.style.display = "block";
+        });
+    });
+    
+</script>
+</body>
+</html>
