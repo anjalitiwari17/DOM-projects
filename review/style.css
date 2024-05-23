@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(253, 240, 225);
+}
+
+
+.container {
+    background-color: rgb(212, 247, 248);
+    border: 2px solid black;
+    height: 700px;
+    width: 650px;
+    border-radius: 20px 0px 20px 0px;
+    
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: 10px 10px 10px grey;
+  }
+  .underline {
+    width: 6rem;
+    height: 0.2rem;
+    background-color: blue;
+    margin: 0 auto;
+  }
+  .review {
+    background-color: white;
+    border-radius: 2rem;
+    height: 501px;
+    width: 450px;
+    margin: 3rem auto;
+    box-shadow: 10px 10px 10px 10px grey;
+  }
+  h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .img-container {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50rem;
+    margin: auto;
+  }
+  #person-img {
+    border-radius: 5rem;
+    outline: 3px solid rgb(22, 134, 191);
+    width: 9rem;
+    height: 9rem;
+  }
+  #author {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #job {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(51, 148, 232);
+  }
+  #info {
+    text-align: center;
+  }
+  .buttons-container {
+    text-align: center;
+    padding: 0.4rem;
+  }
+  .random-btn {
+    margin-left: 12rem;
+    padding: 0.4rem;
+    background-color: blue;
+    border:none;
+    border-radius: 5px;
+    
+    color: white;
+    cursor: pointer;
+  }
+  .prev-btn, .next-btn {
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
