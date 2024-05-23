@@ -1,0 +1,52 @@
+@media screen and (min-width: 800px) {
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid black;
+      box-shadow: 10px 10px 10px grey;
+      padding: 10px;
+    }
+  }
+.links {
+display: flex;
+gap: 10px;
+font-size: 20px;
+list-style: none;
+}
+.social-icons {
+display: flex;
+gap: 30px;
+font-size: 20px;
+text-decoration: none;
+}
+.logo {
+display: flex;
+font-size: 25px;
+}
+span {
+color: rgb(72, 195, 206);
+margin-left: 15px;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+}
+.btn {
+height: 40px;
+}
+@media screen and (max-width: 1475px) {
+.links,
+.social-icons {
+  display: none;
+}
+.links.active,
+.social-icons.active {
+  display: flex;
+  flex-direction: column;
+}
+}
+.nav-container{
+line-height: 50%;
+}
