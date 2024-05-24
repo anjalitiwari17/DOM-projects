@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  h4, p{
+
+    font-size: 18px;
+}
+h1 {
+    font-size: 45px;
+}
+h3 {
+    font-size: 25px;
+}
+
+.section-center {
+    display: flex;
+    border: 2px solid black;
+    height: 700px;
+    width: 800px;
+    margin: 5% 30%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:antiquewhite;
+    box-shadow: 10px 10px 10px rgb(111, 134, 138);
+}
+.deadline {
+    display: flex;
+    justify-content: center;
+}
+.deadline-format {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(111, 111, 145);
+    font-size: 20px;
+}
+
+
+.gift-img img{
+    height: 300px;
+    width: 300px;
+    
+    
+}

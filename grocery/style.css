@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #707a91;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.section-center {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 90vw;
+    max-width: 500px;
+}
+.grocery-form h3 {
+    text-align: center;
+}
+.form-control input {
+    width: 75%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.form-control .submit-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #13a36e;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grocery-container {
+    display: none;
+    margin-top: 2rem;
+}
+.grocery-list {
+    list-style-type: none;
+    padding: 0;
+}
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+.grocery-item p {
+    margin: 0;
+}
+.btn-container {
+    display: flex;
+}
+.btn-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.clear-btn {
+    background: #f34532;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+.alert {
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+.alert-success {
+    color: #1c9d6e;
+}
+.alert-danger {
+    color: #eb4431;
+}
+.show-container {
+    display: block;
+}
