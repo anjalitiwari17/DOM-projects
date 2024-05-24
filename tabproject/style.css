@@ -4,13 +4,14 @@ body {
 
 .title-h1 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     font-size: 3rem;
+    text-decoration: underline;
+    
 }
 
 .title-p {
     text-align: center;
-    margin-top: 1rem;
     font-size: 2rem;
 }
 
@@ -75,4 +76,12 @@ body {
 
 .content.active {
     display: block;
+}
+
+
+.para{
+    
+    text-align: center;
+    width:80vh;
+    font-weight: bold;
 }
