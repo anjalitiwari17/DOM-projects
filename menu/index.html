@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./images/hotel-logo.jpg" class="logo" alt="Logo">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Order</li>
+            </ul>
+        </header>
+        <h1>Our Menu</h1>
+        <div class="btn-container">
+            <button class="filter-btn" type="button" data-id="all">All</button>
+            <div class="break">
+            <button class="filter-btn" type="button" data-id="breakfast">Breakfast</button></div>
+            <button class="filter-btn" type="button" data-id="lunch">Lunch</button>
+            <button class="filter-btn" type="button" data-id="snacks">Snacks</button>
+            <button class="filter-btn" type="button" data-id="dinner">Dinner</button>
+        </div>
+        <div class="section-center"></div>
+    </div>
+    <script>
+        const menu = [
+            {
+                id: 1,
+                title: "Oats",
+                category: "breakfast",
+                price: 16,
+                img: "./images/oats1.jpg",
+                desc: "Healthy and delicious oats with apples.",
+            },
+            {
+                id: 2,
+                title: "Pancakes",
+                category: "breakfast",
+                price: 10,
+                img: "./images/pancake.jpg",
+                desc: "Fluffy pancakes served with syrup and fresh fruits.",
+            },
+            {
+                id: 3,
+                title: "Fruit Salad",
+                category: "breakfast",
+                price: 8,
+                img: "./images/fruit salad.jpg",
+                desc: "A mix of fresh seasonal fruits.",
+            },
+            {
+                id: 4,
+                title: "Dal rice with curd",
+                category: "lunch",
+                price: 19.99,
+                img: "./images/dinner2.webp",
+                desc: "Classic taste of special Daal rice and curd.",
+            },
+            {
+                id: 5,
+                title: "North indian-fullplate",
+                category: "lunch",
+                price: 15,
+                img: "./images/lunch.jpg",
+                desc: "North Indian delicious taste with sweet and salad.",
+            },
+            {
+                id: 6,
+                title: "Veggie Wrap",
+                category: "lunch",
+                price: 12,
+                img: "./images/veges.webp",
+                desc: "A wrap filled with fresh vegetables and hummus.",
+            },
+            {
+                id: 7,
+                title: "Dhokla",
+                category: "snacks",
+                price: 14.67,
+                img: "images/dhokla.jpg",
+                desc: "Steamed fermented batter derived from rice and split chickpeas.",
+            },
+            {
+                id: 8,
+                title: "Samosa",
+                category: "snacks",
+                price: 5,
+                img: "./images/samosa.png",
+                desc: "Crispy pastry filled with spiced potatoes and peas.",
+            },
+            {
+                id: 9,
+                title: "Spring Rolls",
+                category: "snacks",
+                price: 7,
+                img: "./images/spring role.jpg",
+                desc: "Fried rolls filled with vegetables and served with a dipping sauce.",
+            },
+            {
+                id: 10,
+                title: "Rice with kadhai Paneer",
+                category: "dinner",
+                price: 20,
+                img: "./images/kadai-paneer.webp",
+                desc: "Kadhai Paneer paired with rice offers a deliciously spiced and savory meal, featuring paneer cubes in a vibrant tomato-based gravy complemented by fluffy rice.",
+            },
+            {
+                id: 11,
+                title: "Sweet Corn Rice",
+                category: "dinner",
+                price: 25,
+                img: "./images/sweetcornrice.jpg",
+                desc: "Sweet corn rice: Simple, delicious, and ready in minutes, marrying the sweetness of corn with aromatic rice for a quick and satisfying meal.",
+            },
+            {
+                id: 12,
+                title: "Pasta",
+                category: "dinner",
+                price: 18,
+                img: "./images/pasta.jpg",
+                desc: "Pasta in a creamy Alfredo sauce with garlic bread.",
+            }
+        ];
+
+        const sectionCenter = document.querySelector(".section-center");
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        window.addEventListener("DOMContentLoaded", function () {
+            displayMenuItems(menu);
+        });
+
+        filterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                const category = e.currentTarget.dataset.id;
+                const menuCategory = menu.filter(function (menuItem) {
+                    return menuItem.category === category;
+                });
+                if (category === 'all') {
+                    displayMenuItems(menu);
+                } else {
+                    displayMenuItems(menuCategory);
+                }
+            });
+        });
+
+        function displayMenuItems(menuItems) {
+            let displayMenu = menuItems.map(function (item) {
+                return `<article class="menu-item">
+                    <img src="${item.img}" class="photo" alt="${item.title}">
+                    <div class="item-info">
+                        <header>
+                            <h4>${item.title}</h4>
+                            <h4 class="price">$${item.price}</h4>
+                        </header>
+                        <p class="item-text">${item.desc}</p>
+                    </div>
+                </article>`;
+            });
+            displayMenu = displayMenu.join("");
+            sectionCenter.innerHTML = displayMenu;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
